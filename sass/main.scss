@@ -1,0 +1,523 @@
+$green: #44ffa1;
+$purple900: #24053e;
+$purple500: #584d62;
+$purple100: #fcf8ff;
+$white: #ffffff;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	min-height: 100vh;
+	font-family: 'Fraunces', serif;
+	background-color: $purple100;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.header {
+	&__hero {
+		position: relative;
+		background-color: $purple900;
+		padding: 4rem 2rem 14rem 2rem;
+		clip-path: ellipse(950px 100% at top);
+	}
+
+	.bg {
+		display: none;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& a {
+			position: relative;
+			text-decoration: none;
+			color: $white;
+			font-family: 'Manrope', sans-serif;
+			padding: 0.7rem 0;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: $green;
+			}
+		}
+	}
+
+	&__text {
+		color: $white;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 4.8rem;
+		font-weight: 500;
+		padding-top: 5.6rem;
+		margin-bottom: 4rem;
+
+		.tailored {
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: $green;
+			}
+		}
+	}
+
+	&__btn {
+		padding: 2rem 3rem;
+		background-color: $green;
+		border: transparent;
+		font-weight: 600;
+		margin-bottom: 3rem;
+		font-size: 1.6rem;
+	}
+
+	&__img {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 6.4rem;
+		width: 32rem;
+		margin: -10rem auto 0;
+	}
+}
+
+.options {
+	background-color: $purple100;
+	clip-path: ellipse(950px 100% at top);
+	&__box {
+		padding: 6.4rem 2rem;
+	}
+
+	&__option {
+		margin-bottom: 3.2rem;
+		text-align: center;
+		font-family: 'Fraunces', serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		&-number {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			width: 4.8rem;
+			height: 4.8rem;
+			border: 1px solid $purple900;
+			border-radius: 50%;
+			margin-bottom: 2.4rem;
+		}
+
+		&-text {
+			& p {
+				color: #24053e;
+				&:first-child {
+					font-weight: 500;
+					font-size: 2.4rem;
+					margin-bottom: 2.4rem;
+					letter-spacing: -1px;
+				}
+
+				&:nth-child(2) {
+					font-family: 'Manrope', sans-serif;
+					line-height: 180%;
+				}
+			}
+		}
+	}
+}
+
+.cta {
+	background-color: $white;
+	padding: 11.2rem 2rem 0 2rem;
+
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 264px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	&__text {
+		position: relative;
+		background-color: $purple900;
+		color: $white;
+		text-align: center;
+		padding: 3.2rem;
+		margin-top: -5rem;
+
+		&-title {
+			font-size: 3.2rem;
+		}
+
+		&-info {
+			font-family: 'Manrope', sans-serif;
+			line-height: 180%;
+			margin: 2.4rem 0;
+			font-weight: 300;
+		}
+	}
+
+	&__btn {
+		font-size: 1.6rem;
+		color: $purple900;
+		background-color: $green;
+		border: none;
+		padding: 2rem 3.2rem;
+		font-weight: 600;
+	}
+
+	&__pattern {
+		display: none;
+	}
+}
+
+.footer {
+	padding: 8rem;
+	background-color: $white;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		margin-bottom: 5.6rem;
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		position: relative;
+		overflow-x: hidden;
+		.pattern1 {
+			position: absolute;
+			top: 10rem;
+			left: -22rem;
+			display: block;
+		}
+
+		.pattern2 {
+			display: block;
+			position: absolute;
+			right: -10rem;
+			bottom: 10rem;
+		}
+		.nav {
+			& a {
+				font-size: 1.8rem;
+			}
+		}
+
+		&__hero {
+			padding: 4rem 4.4rem 17rem 4.4rem;
+		}
+
+		&__title {
+			font-size: 6rem;
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 4rem;
+		}
+
+		&__img {
+			padding-bottom: 6.4rem;
+			width: 50rem;
+			margin: -13rem auto 0;
+		}
+	}
+
+	.options {
+		display: flex;
+		justify-content: center;
+		&__box {
+			padding: 5.6rem 4.4rem;
+		}
+
+		&__option {
+			margin-bottom: 3.2rem;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			&-number {
+				flex: 0 0 50px; /* Ustalona szerokość, zapobiega różnym rozmiarom */
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 2.4rem;
+				border-radius: 50%;
+			}
+
+			&-text {
+				flex: 1;
+				margin-left: 5.6rem;
+				& p {
+					text-align: left;
+
+					&:first-child {
+						font-size: 2.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	.cta {
+		position: relative;
+		padding: 11.2rem 4.4rem 0 4.4rem;
+
+		&__img {
+			margin: 0;
+		}
+
+		&__text {
+			position: relative;
+			background-color: $purple900;
+			color: $white;
+			text-align: left;
+			padding: 3.2rem;
+			margin-top: -10rem;
+			margin-left: auto;
+			width: 76%;
+
+			&-title {
+				font-size: 4.8rem;
+			}
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+			color: $purple900;
+			background-color: $green;
+			border: none;
+			padding: 1.8rem 3.8rem;
+			font-weight: 500;
+		}
+
+		&__pattern {
+			position: absolute;
+			bottom: -10rem;
+			right: 5rem;
+			display: block;
+		}
+	}
+
+	.footer {
+		&__icons {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 20%;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.header {
+		&__hero {
+			padding: 5.6rem 8rem 14rem 8rem;
+			clip-path: ellipse(100% 100% at top);
+		}
+
+		&__btn {
+			margin-bottom: 5rem;
+		}
+	}
+
+	.cta {
+		padding: 11.2rem 8rem 0 8rem;
+
+		&__img {
+			width: 30%;
+		}
+
+		&__text {
+			padding: 6.4rem;
+			margin-top: -10rem;
+			margin-left: auto;
+			width: 76%;
+
+			&-title {
+				font-size: 4.8rem;
+			}
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+			color: $purple900;
+			background-color: $green;
+			border: none;
+			padding: 1.8rem 3.8rem;
+			font-weight: 500;
+		}
+
+		&__pattern {
+			position: absolute;
+			bottom: -7rem;
+			right: 20rem;
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.header {
+		position: relative;
+		overflow-x: hidden;
+		.pattern1 {
+			position: absolute;
+			top: 10rem;
+			left: -15rem;
+			display: block;
+		}
+
+		.pattern2 {
+			display: block;
+			position: absolute;
+			right: -5rem;
+			bottom: 20rem;
+		}
+
+		&__title {
+			font-size: 8rem;
+			width: 40%;
+		}
+
+		&__img {
+			width: 70rem;
+		}
+
+		&__btn {
+			font-size: 1.8rem;
+		}
+	}
+
+	.options {
+		&__box {
+			padding: 8.8rem 8rem 14.4rem 8rem;
+			display: flex;
+			justify-content: center;
+			align-items: space-between;
+			gap: 5rem;
+		}
+
+		&__option {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0;
+			height: 30vh;
+			padding: 0 4rem;
+
+			&-number {
+				flex: 0 0 6rem; /* Ustalona szerokość, zapobiega różnym rozmiarom */
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 2.4rem;
+				border-radius: 50%;
+				width: 6rem;
+				height: 6rem;
+			}
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				margin: 0;
+
+				& p {
+					text-align: center;
+
+					&:first-child {
+						font-size: 3.2rem;
+						margin-bottom: 0;
+					}
+
+					&:nth-child(2) {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	.cta {
+		&__text {
+			
+			padding: 6.4rem;
+			margin-top:-25rem;
+			margin-left: 30rem;
+			width: 70%;
+
+			&-title {
+				font-size: 5.6rem;
+			}
+
+            &-info{
+                font-size: 1.8rem;
+            }
+		}
+
+		&__btn {
+			font-size: 1.8rem;
+		}
+
+		&__pattern {
+			position: absolute;
+			bottom: -5rem;
+			right: 30rem;
+			display: block;
+		}
+	}
+
+    .footer{
+        padding: 11.2rem;
+        &__icons{
+            width: 10%;
+        }
+    }
+}

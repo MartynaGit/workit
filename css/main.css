@@ -1,0 +1,440 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  font-family: "Fraunces", serif;
+  background-color: #fcf8ff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header__hero {
+  position: relative;
+  background-color: #24053e;
+  padding: 4rem 2rem 14rem 2rem;
+  -webkit-clip-path: ellipse(950px 100% at top);
+          clip-path: ellipse(950px 100% at top);
+}
+.header .bg {
+  display: none;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  padding: 0.7rem 0;
+}
+.header .nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #44ffa1;
+}
+.header__text {
+  color: #ffffff;
+  text-align: center;
+}
+.header__title {
+  font-size: 4.8rem;
+  font-weight: 500;
+  padding-top: 5.6rem;
+  margin-bottom: 4rem;
+}
+.header__title .tailored {
+  position: relative;
+}
+.header__title .tailored::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #44ffa1;
+}
+.header__btn {
+  padding: 2rem 3rem;
+  background-color: #44ffa1;
+  border: transparent;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+.header__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 32rem;
+  margin: -10rem auto 0;
+}
+
+.options {
+  background-color: #fcf8ff;
+  -webkit-clip-path: ellipse(950px 100% at top);
+          clip-path: ellipse(950px 100% at top);
+}
+.options__box {
+  padding: 6.4rem 2rem;
+}
+.options__option {
+  margin-bottom: 3.2rem;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.options__option-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 1px solid #24053e;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+.options__option-text p {
+  color: #24053e;
+}
+.options__option-text p:first-child {
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  letter-spacing: -1px;
+}
+.options__option-text p:nth-child(2) {
+  font-family: "Manrope", sans-serif;
+  line-height: 180%;
+}
+
+.cta {
+  background-color: #ffffff;
+  padding: 11.2rem 2rem 0 2rem;
+}
+.cta__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: auto;
+  margin: 0 auto;
+}
+.cta__text {
+  position: relative;
+  background-color: #24053e;
+  color: #ffffff;
+  text-align: center;
+  padding: 3.2rem;
+  margin-top: -5rem;
+}
+.cta__text-title {
+  font-size: 3.2rem;
+}
+.cta__text-info {
+  font-family: "Manrope", sans-serif;
+  line-height: 180%;
+  margin: 2.4rem 0;
+  font-weight: 300;
+}
+.cta__btn {
+  font-size: 1.6rem;
+  color: #24053e;
+  background-color: #44ffa1;
+  border: none;
+  padding: 2rem 3.2rem;
+  font-weight: 600;
+}
+.cta__pattern {
+  display: none;
+}
+
+.footer {
+  padding: 8rem;
+  background-color: #ffffff;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-bottom: 5.6rem;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .header .pattern1 {
+    position: absolute;
+    top: 10rem;
+    left: -22rem;
+    display: block;
+  }
+  .header .pattern2 {
+    display: block;
+    position: absolute;
+    right: -10rem;
+    bottom: 10rem;
+  }
+  .header .nav a {
+    font-size: 1.8rem;
+  }
+  .header__hero {
+    padding: 4rem 4.4rem 17rem 4.4rem;
+  }
+  .header__title {
+    font-size: 6rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .header__img {
+    padding-bottom: 6.4rem;
+    width: 50rem;
+    margin: -13rem auto 0;
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+  }
+  .options__box {
+    padding: 5.6rem 4.4rem;
+  }
+  .options__option {
+    margin-bottom: 3.2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .options__option-number {
+    flex: 0 0 50px; /* Ustalona szerokość, zapobiega różnym rozmiarom */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    border-radius: 50%;
+  }
+  .options__option-text {
+    flex: 1;
+    margin-left: 5.6rem;
+  }
+  .options__option-text p {
+    text-align: left;
+  }
+  .options__option-text p:first-child {
+    font-size: 2.8rem;
+  }
+  .cta {
+    position: relative;
+    padding: 11.2rem 4.4rem 0 4.4rem;
+  }
+  .cta__img {
+    margin: 0;
+  }
+  .cta__text {
+    position: relative;
+    background-color: #24053e;
+    color: #ffffff;
+    text-align: left;
+    padding: 3.2rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    width: 76%;
+  }
+  .cta__text-title {
+    font-size: 4.8rem;
+  }
+  .cta__btn {
+    font-size: 1.6rem;
+    color: #24053e;
+    background-color: #44ffa1;
+    border: none;
+    padding: 1.8rem 3.8rem;
+    font-weight: 500;
+  }
+  .cta__pattern {
+    position: absolute;
+    bottom: -10rem;
+    right: 5rem;
+    display: block;
+  }
+  .footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+  }
+}
+@media (min-width: 1100px) {
+  .header__hero {
+    padding: 5.6rem 8rem 14rem 8rem;
+    -webkit-clip-path: ellipse(100% 100% at top);
+            clip-path: ellipse(100% 100% at top);
+  }
+  .header__btn {
+    margin-bottom: 5rem;
+  }
+  .cta {
+    padding: 11.2rem 8rem 0 8rem;
+  }
+  .cta__img {
+    width: 30%;
+  }
+  .cta__text {
+    padding: 6.4rem;
+    margin-top: -10rem;
+    margin-left: auto;
+    width: 76%;
+  }
+  .cta__text-title {
+    font-size: 4.8rem;
+  }
+  .cta__btn {
+    font-size: 1.6rem;
+    color: #24053e;
+    background-color: #44ffa1;
+    border: none;
+    padding: 1.8rem 3.8rem;
+    font-weight: 500;
+  }
+  .cta__pattern {
+    position: absolute;
+    bottom: -7rem;
+    right: 20rem;
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .header .pattern1 {
+    position: absolute;
+    top: 10rem;
+    left: -15rem;
+    display: block;
+  }
+  .header .pattern2 {
+    display: block;
+    position: absolute;
+    right: -5rem;
+    bottom: 20rem;
+  }
+  .header__title {
+    font-size: 8rem;
+    width: 40%;
+  }
+  .header__img {
+    width: 70rem;
+  }
+  .header__btn {
+    font-size: 1.8rem;
+  }
+  .options__box {
+    padding: 8.8rem 8rem 14.4rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 5rem;
+  }
+  .options__option {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    height: 30vh;
+    padding: 0 4rem;
+  }
+  .options__option-number {
+    flex: 0 0 6rem; /* Ustalona szerokość, zapobiega różnym rozmiarom */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+  }
+  .options__option-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .options__option-text p {
+    text-align: center;
+  }
+  .options__option-text p:first-child {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+  }
+  .options__option-text p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .cta__text {
+    padding: 6.4rem;
+    margin-top: -25rem;
+    margin-left: 30rem;
+    width: 70%;
+  }
+  .cta__text-title {
+    font-size: 5.6rem;
+  }
+  .cta__text-info {
+    font-size: 1.8rem;
+  }
+  .cta__btn {
+    font-size: 1.8rem;
+  }
+  .cta__pattern {
+    position: absolute;
+    bottom: -5rem;
+    right: 30rem;
+    display: block;
+  }
+  .footer {
+    padding: 11.2rem;
+  }
+  .footer__icons {
+    width: 10%;
+  }
+}/*# sourceMappingURL=main.css.map */
