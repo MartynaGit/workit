@@ -540,6 +540,12 @@ img {
 }
 
 @media (min-width: 1600px) {
+
+    .header{
+        &__title{
+            width: 30%;
+        }
+    }
 	.cta {
 		&__img {
 			width: 30%;

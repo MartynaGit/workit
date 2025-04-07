@@ -452,6 +452,9 @@ img {
   }
 }
 @media (min-width: 1600px) {
+  .header__title {
+    width: 30%;
+  }
   .cta__img {
     width: 30%;
   }
