@@ -91,10 +91,18 @@ img {
 	&__btn {
 		padding: 2rem 3rem;
 		background-color: $green;
-		border: transparent;
-		font-weight: 600;
+		border:2px solid transparent;
+		font-weight: 500;
 		margin-bottom: 3rem;
 		font-size: 1.6rem;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        &:hover{
+            color: $green;
+            background-color: transparent;
+            border: 2px solid $green;
+        }
 	}
 
 	&__img {
@@ -190,12 +198,20 @@ img {
 	}
 
 	&__btn {
-		font-size: 1.6rem;
-		color: $purple900;
+		padding: 2rem 3rem;
 		background-color: $green;
-		border: none;
-		padding: 2rem 3.2rem;
-		font-weight: 600;
+		border:2px solid transparent;
+		font-weight: 500;
+		margin-bottom: 3rem;
+		font-size: 1.6rem;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        &:hover{
+            color: $green;
+            background-color: transparent;
+            border: 2px solid $green;
+        }
 	}
 
 	&__pattern {
@@ -331,7 +347,7 @@ img {
 			font-size: 1.6rem;
 			color: $purple900;
 			background-color: $green;
-			border: none;
+			
 			padding: 1.8rem 3.8rem;
 			font-weight: 500;
 		}
@@ -388,7 +404,7 @@ img {
 			font-size: 1.6rem;
 			color: $purple900;
 			background-color: $green;
-			border: none;
+			
 			padding: 1.8rem 3.8rem;
 			font-weight: 500;
 		}
@@ -486,12 +502,13 @@ img {
 	}
 
 	.cta {
+        
 		&__text {
 			padding: 6.4rem;
 			margin-top: -25rem;
 			margin-left: auto;
 			margin-right: auto;
-			width: 50%;
+			width: 60%;
 
 			&-title {
 				font-size: 5.6rem;
@@ -524,14 +541,13 @@ img {
 
 @media (min-width: 1600px) {
 	.cta {
-
-        &__img{
-            width: 30%;
-        }
+		&__img {
+			width: 30%;
+		}
 		&__text {
-			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
+			margin-left:25%;
+			
+			width: 60%;
 
 			&-title {
 				font-size: 5.6rem;

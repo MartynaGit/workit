@@ -77,10 +77,17 @@ img {
 .header__btn {
   padding: 2rem 3rem;
   background-color: #44ffa1;
-  border: transparent;
-  font-weight: 600;
+  border: 2px solid transparent;
+  font-weight: 500;
   margin-bottom: 3rem;
   font-size: 1.6rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.header__btn:hover {
+  color: #44ffa1;
+  background-color: transparent;
+  border: 2px solid #44ffa1;
 }
 .header__img {
   position: relative;
@@ -164,12 +171,19 @@ img {
   font-weight: 300;
 }
 .cta__btn {
-  font-size: 1.6rem;
-  color: #24053e;
+  padding: 2rem 3rem;
   background-color: #44ffa1;
-  border: none;
-  padding: 2rem 3.2rem;
-  font-weight: 600;
+  border: 2px solid transparent;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.cta__btn:hover {
+  color: #44ffa1;
+  background-color: transparent;
+  border: 2px solid #44ffa1;
 }
 .cta__pattern {
   display: none;
@@ -285,7 +299,6 @@ img {
     font-size: 1.6rem;
     color: #24053e;
     background-color: #44ffa1;
-    border: none;
     padding: 1.8rem 3.8rem;
     font-weight: 500;
   }
@@ -330,7 +343,6 @@ img {
     font-size: 1.6rem;
     color: #24053e;
     background-color: #44ffa1;
-    border: none;
     padding: 1.8rem 3.8rem;
     font-weight: 500;
   }
@@ -415,7 +427,7 @@ img {
     margin-top: -25rem;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
   }
   .cta__text-title {
     font-size: 5.6rem;
@@ -444,9 +456,8 @@ img {
     width: 30%;
   }
   .cta__text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-left: 25%;
+    width: 60%;
   }
   .cta__text-title {
     font-size: 5.6rem;
