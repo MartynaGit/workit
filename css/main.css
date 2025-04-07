@@ -413,8 +413,9 @@ img {
   .cta__text {
     padding: 6.4rem;
     margin-top: -25rem;
-    margin-left: 30rem;
-    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   .cta__text-title {
     font-size: 5.6rem;
@@ -428,7 +429,7 @@ img {
   .cta__pattern {
     position: absolute;
     bottom: -5rem;
-    right: 30rem;
+    left: 50%;
     display: block;
   }
   .footer {

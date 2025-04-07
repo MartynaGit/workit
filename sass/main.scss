@@ -487,19 +487,19 @@ img {
 
 	.cta {
 		&__text {
-			
 			padding: 6.4rem;
-			margin-top:-25rem;
-			margin-left: 30rem;
-			width: 70%;
+			margin-top: -25rem;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
 
 			&-title {
 				font-size: 5.6rem;
 			}
 
-            &-info{
-                font-size: 1.8rem;
-            }
+			&-info {
+				font-size: 1.8rem;
+			}
 		}
 
 		&__btn {
@@ -509,15 +509,15 @@ img {
 		&__pattern {
 			position: absolute;
 			bottom: -5rem;
-			right: 30rem;
+			left: 50%;
 			display: block;
 		}
 	}
 
-    .footer{
-        padding: 11.2rem;
-        &__icons{
-            width: 10%;
-        }
-    }
+	.footer {
+		padding: 11.2rem;
+		&__icons {
+			width: 10%;
+		}
+	}
 }
