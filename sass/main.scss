@@ -521,3 +521,36 @@ img {
 		}
 	}
 }
+
+@media (min-width: 1600px) {
+	.cta {
+
+        &__img{
+            width: 30%;
+        }
+		&__text {
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+
+			&-title {
+				font-size: 5.6rem;
+			}
+
+			&-info {
+				font-size: 1.8rem;
+			}
+		}
+
+		&__btn {
+			font-size: 1.8rem;
+		}
+
+		&__pattern {
+			position: absolute;
+			bottom: -5rem;
+			left: 50%;
+			display: block;
+		}
+	}
+}

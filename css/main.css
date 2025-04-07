@@ -438,4 +438,29 @@ img {
   .footer__icons {
     width: 10%;
   }
+}
+@media (min-width: 1600px) {
+  .cta__img {
+    width: 30%;
+  }
+  .cta__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .cta__text-title {
+    font-size: 5.6rem;
+  }
+  .cta__text-info {
+    font-size: 1.8rem;
+  }
+  .cta__btn {
+    font-size: 1.8rem;
+  }
+  .cta__pattern {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
